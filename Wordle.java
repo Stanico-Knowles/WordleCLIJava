@@ -71,7 +71,7 @@ public class Wordle {
         String[] guessToArray = guess.split("");
         String[] wordOfTheDayToArray = wordOfTheDay.split("");
 
-        for (int i = 0; i < guessToArray.length; i++) {
+        for (int i = 0; i < 5; i++) {
             if (Arrays.asList(wordOfTheDayToArray).contains(guessToArray[i]) && guessToArray[i].equals(wordOfTheDayToArray[i])) {
                 hint.append(String.format("%s - correct ", guessToArray[i]));
             }
