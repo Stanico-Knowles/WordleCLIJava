@@ -28,7 +28,7 @@ public class Wordle {
                     }
                     if (counter == 5) {
                         input.close();
-                        return "Whewwww!";
+                        return "Whewwww! That was close but way to go!";
                     }
                     input.close();
                     return responses[new Random().nextInt(responses.length)];
